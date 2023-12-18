@@ -12,14 +12,6 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// Replace with your database details
-const (
-	dbUser     = "your_db_user"
-	dbPassword = "your_db_password"
-	dbEndpoint = "your_db_endpoint"
-	dbName     = "your_db_name"
-)
-
 // CollectData connects to the RDS instance and CloudWatch, then collects and prints metrics
 func CollectData() {
 	// Connect to the database
